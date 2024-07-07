@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>MA.IA</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- nav bar -->
+    <header>
+      <!-- nav -->
+      <div class="nav container">
+        <!-- logo -->
+        <a href="#" class="logo">LisbelaPin</a>
+        <!-- carrinho icon-->
+
+        <i class="bx bx-shopping-bag" id="cart-icon" data-quantitiy="0">
+          <span id="cart-quantity-display"></span
+        ></i>
+        <!--carrinho-->
+        <div class="cart">
+          <h2 class="cart-title">Seu carrinho</h2>
+          <!--conteúdo-->
+          <div class="cart-content">
+            <!-- os itens do carrinho serão adicionados aqui -->
+          </div>
+          <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">R$0</div>
+          </div>
+          <!-- Buy buttom-->
+          <button type="button" class="btn-buy">Comprar</button>
+          <!--fechar carrinho-->
+          <i class="bx bx-x" id="close-cart"></i>
+        </div>
+      </div>
+    </header>
+    <!--produtos-->
+    <section class="shop container">
+      <h2 class="section-title">Produtos</h2>
+      <div class="shop-content">
+        <!-- box 1-->
+        <div class="product-box">
+          <!--Stripe need  images that are on online local server it will not show in stripe checkout page we have to upload on line -->
+          <img
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwcQMSTW-QUVi7S_zmCWgc0xCuog0KrDOLnxeOM3lR8YFGFYrNxzbqg1MRt-t7R_eGE2qyxkgb4bQoWyQi_2rIZsh3knD3FEk-WFyaEd5XFNKMD_bWka6Fb5BiCPawx6zQbXmD2s7L96pzE2wd2iGHsVbtGWIkljnf89ovknGyctTfyKdHgzOds3-7Dhz5/s320/product8.jpeg"
+            alt=""
+            class="product-img"
+          />
+          <h2 class="product-title">Adicolor seasonal</h2>
+          <style>
+            .sizes {
+              margin-top: 16px;
+              margin-bottom: 16px;
+              align-items: center;
+            }
+
+            .size-button {
+              background-color: #fff;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+              padding: 8px 12px;
+              margin-right: 8px;
+              cursor: pointer;
+              transition: background-color 0.3s, border-color 0.3s;
+            }
+
+            .size-button:hover {
+              background-color: #f0f0f0;
+              border-color: #999;
+            }
+          </style>
+          <div class="sizes">
+            <button class="size-button">S</button>
+            <button class="size-button">M</button>
+            <button class="size-button">L</button>
+            <button class="size-button">XL</button>
+          </div>
+          <span class="price">$50</span>
+          <i class="bx bxs-shopping-bag-alt add-cart"></i>
+        </div>
+        <!-- box 2-->
+        <div class="product-box">
+          <!--Stripe need  images that are on online local server it will not show in stripe checkout page we have to upload on line -->
+          <img
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihC8de-c1O4HMX-jZ5Vc0cMcPZRPrXW649GkyvdYT0ULJ8f0FBO-MbmvUeO0oIPg6hyzPexxyHzwZk6IcFQ8-2NNRscizJUpbwivIth5vzIsfHrWIX65PoHz4UzXBokkiuv5IiL78J0hjGJiCCbUguLlUPb0g2h0nYKsLIbWL1FvpiJ90vU6N60sVuFydS/s320/product4.jpeg"
+            alt=""
+            class="product-img"
+          />
+          <h2 class="product-title">Messi Goat</h2>
+          <div class="sizes">
+            <button class="size-button">S</button>
+            <button class="size-button">M</button>
+            <button class="size-button">L</button>
+            <button class="size-button">XL</button>
+          </div>
+          <span class="price">$50</span>
+          <i class="bx bxs-shopping-bag-alt add-cart"></i>
+        </div>
+        <!-- box 3-->
+        <div class="product-box">
+          <!--Stripe need  images that are on online local server it will not show in stripe checkout page we have to upload on line -->
+          <img
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRQgORZXWrTVPvQ4bDzzF9vYPsE7Rc7a9mMur2ChI-mm_Nq5hcyirwAZrPHjkDC_JZOA2H7qqHoba84EdvcMkhHh-v6r7Zgu_FuXGfVdoA8gsQqpL0fZrZeh6z-1MCeidrB42BngTHy-wnCqbPkfjdNcYfGrR-WRO3VA-GdvJRkZ5_n_WUqB-Ng3abDlwr/s320/product6.jpeg"
+            alt=""
+            class="product-img"
+          />
+          <h2 class="product-title">Fone adidas</h2>
+          <div class="sizes">
+            <button class="size-button">S</button>
+            <button class="size-button">M</button>
+            <button class="size-button">L</button>
+            <button class="size-button">XL</button>
+          </div>
+          <span class="price">$50</span>
+          <i class="bx bxs-shopping-bag-alt add-cart"></i>
+        </div>
+        <!-- box 4-->
+        <div class="product-box">
+          <!--Stripe need  images that are on online local server it will not show in stripe checkout page we have to upload on line -->
+          <img
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAeyycuXq7uTE3Edc0jDYGD7AamVzUA_pTrSCs6VXgqs-m0cJX0iAHcMDFrYiTW8eHssPNo1tUNe_TfMQHsl67hUXlfQRUGuinJzpVtgoIlMHfav-CZ3NzvpTYDIB55AA2VsQ4QuUHyyOl4I4LyRAc0g8gkJZl8f9jN1cow81ioCVo0_Jbf8ZvoYTsEwjq/s320/product2.jpeg"
+            alt=""
+            class="product-img"
+          />
+          <h2 class="product-title">Mochila</h2>
+          <div class="sizes">
+            <button class="size-button">S</button>
+            <button class="size-button">M</button>
+            <button class="size-button">L</button>
+            <button class="size-button">XL</button>
+          </div>
+          <span class="price">$50</span>
+          <i class="bx bxs-shopping-bag-alt add-cart"></i>
+        </div>
+        <!-- box 5-->
+        <div class="product-box">
+          <!--Stripe need  images that are on online local server it will not show in stripe checkout page we have to upload on line -->
+          <img
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJ3xumcrKMt7bAetAASsTO2yqTLeYLiN315yV2yS00PqYJPrOpmkISEZPEYbfzBxZsIqBV8ZtJoiIjQhWtxgSSKUv_2DctcRELddi4qOkOIRObacfeVQeIfDoDvtcFIaAuMMRmf9P-S7CRsHQ-vXbRG85z7faIOM16aIqFrDaKGGklWv5GdKl1BQSMGwe2/s320/product7.jpeg"
+            alt=""
+            class="product-img"
+          />
+          <h2 class="product-title">Garrafa</h2>
+          <div class="sizes">
+            <button class="size-button">S</button>
+            <button class="size-button">M</button>
+            <button class="size-button">L</button>
+            <button class="size-button">XL</button>
+          </div>
+          <span class="price">$50</span>
+          <i class="bx bxs-shopping-bag-alt add-cart"></i>
+        </div>
+        <!-- box 6-->
+      </div>
+    </section>
+   
+
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+
+  </body>
+</html>
